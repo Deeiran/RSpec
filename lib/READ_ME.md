@@ -122,4 +122,49 @@ check_grammer(i love London,)
 
 ## 4.Implement the Behaviour. 
 
+# Challange - One
+
+#Check the #TODO in a Text.
+
+## 1.Discribe the Problem
+
+As a user
+So that I can keep track of my tasks
+I want to check if a text includes the string #TODO.
+
+## 2.Disign the Method Signature
+
+def check_string(text):
+    #Parameter:
+        #text: a string contain words
+    #Return:
+        #boolian: True/False
+
+## 3.Create Example as Tests. 
+
+'''
+string(#TODO) in the given text 
+it will return True
+'''
+check_string("This is my #TODO list")
+# => True
+
+
+'''
+Without string(#TODO) in the given text 
+it will return False
+'''
+check_string("This is my todo list")
+# => False
+
+'''
+empty sting in the given text 
+it will raise an exception
+'''
+check_string("")
+# => Message > "No Text given"
+
+
+
+
 
